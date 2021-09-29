@@ -15,7 +15,7 @@ public class AmmoManager : MonoBehaviour
         }
         else
         {
-            AmmoManagerSingleton = null;
+            Destroy(GetComponent<AmmoManager>());
         }
 
     }
